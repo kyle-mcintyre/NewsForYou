@@ -1,0 +1,65 @@
+{% load static %}
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{% static "css/main.css" %}">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    #aboutHeader{
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-shadow: 1px 1px 2px gray;
+    }
+</style>
+
+{% include "base.html" %}
+{% block page_content %}
+
+<div class="w3-animate-opacity">
+    <div class="col-md-8 offset-md-2">
+        <h2 id = "aboutHeader">About the Project</h2>
+        
+        <h5> Usage </h5>
+        <p>
+        Paste any <u>politically charged</u> article into the textbox on the "Home" page, then hit submit. <br>
+        The AI machine will evaluate the article and return either a score of "Liberal Bias",
+        "Conservative Bias" or "No Bias" detected. 
+        </p>
+
+  
+        <h5> Data </h5>
+        <p>
+            The data consists of ~2100 articles with about 700 articles from far left, far right, and neutral news sites. <br>
+            News sites were determined from https://mediabiasfactcheck.com/. 
+        </p>
+
+        <h5> AI Model </h5>
+        <p>
+            Each article was first summarized and then cleansed and vectorized in the following steps: <br>
+            All lowercase -> remove all non-english characters -> remove all punctuation -> remove all stop words -> stem the text (Porter Stemming) -> tokenize the text -> TF IDF vectorize <br>
+            I then created a Support-Vector-Machine from the vectorized articles.
+        </p> 
+
+        <h5> Main Tools Used </h5>
+        <p class="tab">
+            Python <br>
+            sklearn (SVM)<br>
+            gensim (text cleansing)<br>
+            pickle (loading SVM)<br>
+            django (website and database)<br>
+              - HTML<br>
+              - CSS<br>
+              - Javascript<br>
+              - SQLite<br>
+        </p>
+
+        <h6>For more information check out the prject on github: https://github.com/kyle-mcintyre/NewsForYou</h6>
+    </div>
+</div>
+
+{% endblock %}
+
+{% include "footer.html" %}
