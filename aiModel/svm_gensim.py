@@ -45,11 +45,11 @@ test_vectors = vectorizer.transform(Test_X)
 SVMmodel = svm.SVC(C=500, kernel='linear', gamma='scale')
 SVMmodel.fit(train_vectors,Train_Y)
 
-
-predictions_SVM = SVMmodel.predict(test_vectors)
-print("SVM Accuracy Score -> ",accuracy_score(predictions_SVM, Test_Y)*100)
-plot_confusion_matrix(SVMmodel, test_vectors, Test_Y)  
-plt.show()
+### For testing purposes ###
+# predictions_SVM = SVMmodel.predict(test_vectors)
+# print("SVM Accuracy Score -> ",accuracy_score(predictions_SVM, Test_Y)*100)
+# plot_confusion_matrix(SVMmodel, test_vectors, Test_Y)  
+# plt.show()
 
 filename = 'newsBiasPredictModel.sav'
 vectorFile = 'newsVectorizor.sav'
