@@ -21,7 +21,7 @@ python manage.py runserver
 - The comments page keeps track of all comments in chronological order (newest to oldest)
 
 ## AI Model
-The AI Model is a support vector machine created from ~4,000 summarized political articles. Each article was scraped from far left, neutral or far right news sites and ranked as either a 1, 3, or 5 accordingly. News sites were determined from https://www.allsides.com/media-bias/media-bias-ratings. 
+The AI Model is a support vector machine created from ~4,000 summarized political articles. Each article was scraped from far left, neutral or far right news sites and scored as either a 1, 3, or 5 accordingly. News sites were determined from https://www.allsides.com/media-bias/media-bias-ratings. 
 
 
 ## Tools Used
