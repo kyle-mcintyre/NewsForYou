@@ -1,3 +1,19 @@
+# NewsForYou
+Django web app designed to summarize and detect political bias in text
+
+## Installation
+First clone the reposirory, then optionally create a virtual environemt and activate it. Next pip install all the requirements. Finally cd into the 'newsBiasSite' folder and start the django server.
+
+'''bash
+git clone ##url##
+python -m venv venv 
+./venv/Scripts/activate
+cd newsBiasSite
+pip install -r requirements.txt
+python manage.py runserver
+'''
+
+
 Hello all, 
 
 The goal of this project is to create a website using Django. This code base touches many aspects of django, such as databases, the front end, and the backend.
