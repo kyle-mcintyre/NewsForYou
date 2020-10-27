@@ -16,9 +16,9 @@ pip install -r requirements.txt
 ```bash
 python manage.py runserver
 ```
-The home page is where you can paste in an article to be summarized and politically scored. There is also a side box to add a comment.
-The about page describes the project from a high level. 
-The comments page keeps track of all comments in chronological order (newest to oldest)
+- The home page is where you can paste in an article to be summarized and politically scored. There is also a side box to add a comment.
+- The about page describes the project from a high level. 
+- The comments page keeps track of all comments in chronological order (newest to oldest)
 
 ## Tools Used
 - Python 
