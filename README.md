@@ -5,7 +5,7 @@ Django web app designed to summarize and detect political bias in text
 First clone the reposirory, then optionally create a virtual environemt and activate it. Next pip install all the requirements. Finally cd into the 'newsBiasSite' folder and start the django server.
 
 ```bash
-git clone ##url##
+git clone https://github.com/kyle-mcintyre/NewsForYou.git
 python -m venv venv 
 ./venv/Scripts/activate
 cd newsBiasSite
