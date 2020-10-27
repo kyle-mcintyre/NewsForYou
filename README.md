@@ -29,3 +29,9 @@ python manage.py runserver
     - CSS
     - Javascript
     - SQLite
+
+## Author
+Kyle McIntyre
+
+## Licence
+GNU General Public License v3.0
